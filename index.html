@@ -3,34 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/01bd3986cc.js" crossorigin="anonymous"></script>
+  <title>Document</title>
 </head>
-<body class="main">  
-  <div class="container">
-    <div class="cn-image"  id="songImg">
+<body>
+<div class="container">
+  <header>
+    <h1>MAAMOUNify</h1>
+    <div class="pp">
+      <a href="#"><i class="fa-solid fa-house"></i></a>
+      <input type="text" id="searchBar">
+    </div>
     
+  </header>
+  <nav>
+    <ul>
+      <li ><img src="image/castro.jpg" alt="" ></li>
+      <li><img src="image/ala-logo.png" alt=""></li>
+      <li><img src="image/empire.jpg" alt=""></li>
+      <li><img src="image/xiivi-logo.jpg" alt=""></li>
+      <li><img src="image/ktyb.jpg" alt=""></li>
+    </ul>
+  </nav>
+  <main>
+    <div id="playListe">
+
     </div>
-    <div class="cn-name">
-        <h5 id="songName" style="margin-left: 10px;">9k32</h5>
-        <p id="artist">XIIVI</p>
+  </main>
+  <aside>
+    <div class="cn-aside">
+      <h4></h4>
+      <div class="aside-music">
+        <div class="img" id="songImg"></div>
+        <h2 id="songName" style="margin-left: 10px;"></h2>
+        <p id="artist"></p>
+      </div>
+      <div class="aside-artist">
+        <div class="img-ar" id="artwork"></div>
+        <h1 id="artst"></h1>
+        <p id="description" style="display:flex; justify-content: space-between;">
+          <div id="btn"></div>
+        </p>
+      </div>
     </div>
-    <div class="cn-audio">
-      <div>
-        <input type="range" name="" id="progress">
-        <audio  id="songPlayer">
-          <source src="songs/9K32.mp3" type="audio/mpeg">
-        </audio>
-      </div>
-      <div style="display: flex; justify-content: space-between;">
-        <i onclick="previousSong()" class="fa-solid fa-backward"></i>
-        <i onclick="playPause()" id="cntrIcon" class="fa-solid fa-play"></i>
-        <!-- <i class="fa-solid fa-play"></i> -->
-        <i onclick="nextSong()" class="fa-solid fa-forward"></i>
-      </div>
+  </aside>
+  <footer >
+    <div class="cn">
+    <input type="range" name="" min="0" max="60" value="30" id="progress">
+    <audio  id="songPlayer">
+      <source src="" type="audio/mpeg">
+    </audio>
+    <div class="i">
+      <i onclick="previousSong()" class="fa-solid fa-backward ward"></i>
+      <i onclick="playPause()" id="cntrIcon" class="fa-solid fa-play play"></i>
+      <i onclick="nextSong()" class="fa-solid fa-forward ward"></i>
     </div>
   </div>
-  <script src="scripte.js"></script>
+    </footer>
+</div>
+<script src="scripte.js"></script>
 </body>
 </html>

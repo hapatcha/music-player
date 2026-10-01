@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="rangeK.css">
+  <title>Document</title>
+</head>
+<body>
+  <input id="myinput" min="0" max="60" type="range" value="30" class="slider">
+  <script>
+    document.getElementById("progress").oninput = function() {
+  var value = (this.value-this.min)/(this.max-this.min)*100
+  this.style.background = `linear-gradient(to right, #82CFD0 0%, #82CFD0 ${value}%, #fff ${value}%, white 100%)`
+};
+  </script>
+</body>
+</html>
